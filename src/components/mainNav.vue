@@ -32,7 +32,7 @@ const toggleNavMobile = () => {
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/resume">Resume</RouterLink>
             <RouterLink to="/publication">Publication</RouterLink>
-            <RouterLink to="/research">Research</RouterLink>
+            <RouterLink to="/projects">projects</RouterLink>
             <RouterLink to="/playground">Playground </RouterLink>
         </nav>
     </div>
@@ -45,7 +45,7 @@ const toggleNavMobile = () => {
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/resume">Resume</RouterLink>
     <RouterLink to="/publication">Publication</RouterLink>
-    <RouterLink to="/research">Research</RouterLink>
+    <RouterLink to="/projects">projects</RouterLink>
     <RouterLink to="/playground">Playground </RouterLink>
 </navMobile>
 </template>
