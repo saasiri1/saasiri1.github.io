@@ -1,6 +1,6 @@
 <template >
     
-    <div class="grid grid-cols-1 items-center xl:grid-cols-2 content-center lg:container flex-grow">
+    <div class="grid grid-cols-1 items-center xl:grid-cols-2 content-center ">
         <div class=" m-5 xl:m-20 lg:mt-0 mx-auto ">
                 <h1 class="text-2xl font-bold text-red-950 mb-10">Sultan Asiri, PhD</h1>
                 <div class=" mx-auto flex flex-col items-center justify-center">
