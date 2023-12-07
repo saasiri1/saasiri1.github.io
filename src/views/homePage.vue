@@ -1,15 +1,15 @@
 <template >
     
-    <div class="grid grid-cols-1 items-center md:grid-cols-2 content-center">
-        <div class=" m-5 md:m-20 md:mt-0 mx-auto ">
+    <div class="grid grid-cols-1 items-center xl:grid-cols-2 content-center lg:container flex-grow">
+        <div class=" m-5 xl:m-20 lg:mt-0 mx-auto ">
                 <h1 class="text-2xl font-bold text-red-950 mb-10">Sultan Asiri, PhD</h1>
                 <div class=" mx-auto flex flex-col items-center justify-center">
-                <img src="../imgs/sultan-asiri-4.png" alt="Sultan Asiri image" class="h-96 w-72 rounded-full">
+                <img src="../imgs/sultan-asiri-4.png" alt="Sultan Asiri image" class="h-96 w-72 rounded-full ">
                 </div>
         </div>
 
 
-        <div class="m-5 md:m-20 md:ml-0">
+        <div class="m-5 xl:m-20 xl:ml-0">
             <h6 class="text-2xl font-bold ">About Me</h6>
             <div class="text-justify">I am a Ph.D. student in the computer science department at the University of Alabama. My research interests are Phishing detection,
                  advertisement attacks, and applying Natural Language Processing. I am a member of <a href="http://yangxiao.cs.ua.edu" class="text-red-800 font-semibold">Dr. Xiao's&nbsp; 
@@ -24,11 +24,3 @@
 
     </div>
 </template>
-<script>
-export default {
-    
-}
-</script>
-<style lang="">
-    
-</style>

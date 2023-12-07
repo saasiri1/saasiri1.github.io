@@ -19,7 +19,7 @@ const toggleNavMobile = () => {
     @apply uppercase hover:bg-gray-200 mr-4 px-2 py-1 rounded mt-5 text-sm md:text-base hidden md:block;
   }
   navMobile a {
-    @apply uppercase hover:bg-gray-200 mr-4 px-2 py-1 rounded mt-5 text-sm md:text-lg;
+    @apply uppercase hover:bg-gray-200 mr-4 px-2 py-1 rounded mt-5 text-sm md:text-lg font-semibold;
   }
 </style>
 <template>
@@ -39,13 +39,14 @@ const toggleNavMobile = () => {
 </main>
 
 <!-- Mobile navigation covering the whole page -->
-<navMobile class="md:hidden fixed top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-white" v-bind:class="{'translate-x-0':isNavMobileOpen,'translate-x-full':!isNavMobileOpen}">
+<navMobile class="md:hidden fixed top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-white" v-bind:class="{'translate-x-0': isNavMobileOpen, 'translate-x-full': !isNavMobileOpen}">
   <XMarkIcon class="absolute top-0 right-0 h-8 w-8 mt-4 mr-5" @click="toggleNavMobile" />
   <img src="../imgs/theme-3-corrected.png" alt="Sultan Asiri image" class="w-40 h-12 top-0">
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/resume">Resume</RouterLink>
-    <RouterLink to="/publication">Publication</RouterLink>
-    <RouterLink to="/projects">projects</RouterLink>
-    <RouterLink to="/playground">Playground </RouterLink>
+    <RouterLink to="/" @click="toggleNavMobile">Home</RouterLink>
+    <RouterLink to="/resume" @click="toggleNavMobile">Resume</RouterLink>
+    <RouterLink to="/publication" @click="toggleNavMobile">Publication</RouterLink>
+    <RouterLink to="/projects" @click="toggleNavMobile">Projects</RouterLink>
+    <RouterLink to="/playground" @click="toggleNavMobile">Playground</RouterLink>
 </navMobile>
+
 </template>

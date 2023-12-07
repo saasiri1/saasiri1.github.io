@@ -6,15 +6,12 @@ import MainNav from './mainNav.vue';
 
 </script>
 <template >
-  <div class="m-5 md:container flex flex-col ">
-    <!-- MainNav -->
-    <MainNav class="mb-auto" />
+<div class=" flex flex-col h-screen">
+  <MainNav class="xl:container m-5 mb-auto" />
 
-    <!-- Slot for your page content -->
-    <slot class="flex-grow" />
+    <slot />
 
 
-  </div>
-      <!-- MainFooter -->
-      <MainFooter />
+  <MainFooter class="bg-gray-100 p-4 text-center text-white" />
+</div>
 </template>
