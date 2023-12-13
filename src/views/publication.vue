@@ -1,5 +1,5 @@
 <template >
-    	<div >
+    	<div class="m-10 text-justify">
 			<div class="wsite-section-elements">
 				<h2 class="text-2xl font-bold text-red-800">Publication:</h2>
 

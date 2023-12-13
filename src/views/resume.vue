@@ -7,7 +7,7 @@ title{
 
 <template >
 
-<div>
+<div class="m-10 text-justify">
     <h2 class="text-2xl font-bold text-red-800">Resume:</h2>
 
     <h2 class="text-2xl font-bold">Experience</h2>

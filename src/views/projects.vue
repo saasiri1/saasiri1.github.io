@@ -13,7 +13,7 @@
     }
 </style>
 <template >
-
+<div class="m-10 text-justify">
 <h2 class="title">Master Degree research:</h2>
 
 <div class="subtitle">&#8203;Bird Species Detection:&nbsp;</div>
@@ -68,5 +68,5 @@
             <li>The University of Alabama</li>
         </ul>
     </div>
-
+</div>
 </template>
