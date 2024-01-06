@@ -17,7 +17,20 @@
                     <li>Zhang, Z., Zheng, J., Tao, Y., Xiao, Y., Yu, S., Asiri, S., ... &amp; Li, T. (2022). Traffic Sign Based Point Cloud Data Registration with Roadside LiDARs in Complex 
                         Traffic Environments.&nbsp;Electronics,&nbsp;11(10), 1559.</li><li>Asiri, S., Xiao, Y., Alzahrani, S., Li, S., &amp; Li, T. (2023). A Survey of Intelligent Detection 
                             Designs of HTML URL Phishing Attacks.&nbsp;IEEE Access.&#8203;</li>
-                        </ul>
+                    <li>
+                        Asiri, S., Xiao, Y., & Li, T. (2023). PhishTransformer: A Novel Approach to Detect Phishing Attacks Using URL Collection and Transformer. Electronics, 13(1), 30.
+                    </li>
+
+                </ul>
+                <h2 class='font-bold text-2xl mt-10'>Attendence:</h2>
+                <ul class="list-disc ml-10">
+                    <li>In Dec, 2023 I was awarded to attended Nural Information processsing (NeurIPS), New Orleans, LA, USA.</li>
+                    
+                    <li>
+                        I signed as a committee member in the 2024 ACM Southeast Conference (ACMSE 2024).
+                    </li>
+
+                </ul>
                     </div>
 			</div>
 		</div>
