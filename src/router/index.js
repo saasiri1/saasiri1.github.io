@@ -14,13 +14,20 @@ const router = createRouter({
 
     {
       path: '/resume',
+      
       name: 'resume',
-      component: Resume
+      component: Resume,
+  
     },
     {
-      path:'/publication',
-      name:'publications',
-      component:publication
+      
+        
+          path: '/#publication',
+          name: 'publications',
+          component: homePage,
+          meta: { scrollTo: '#publication' }
+        ,
+      
     },
     {
       path:'/projects',

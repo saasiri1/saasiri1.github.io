@@ -10,7 +10,7 @@
                         In&nbsp;Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining&nbsp;(pp. 767-775).</li>
                     <li>Xiao, C., &amp; Asiri, S. (2022, April). A low-power, machine learning-based optical communications system for disaster relief. In&nbsp;Proceedings of the 2022 ACM Southeast
                          Conference&nbsp;(pp. 123-129).</li><li>Saleh Alzahrani, Yang Xiao, and Sultan Asiri. 2023. Conti Ransomware Development Evaluation. In Proceedings of the 2023 ACM Southeast 
-                            Conference (ACMSE 2023). Association for Computing Machinery, New York, NY, USA, 39&ndash;46. https://doi.org/10.1145/3564746.3587004<br /></li>
+                            Conference (ACMSE 2023). Association for Computing Machinery, New York, NY, USA, 3946. <a herf="https://doi.org/10.1145/3564746.3587004">Read More</a></li>
                 </ul> 
                 <h2 class='font-bold text-2xl mt-10'>Journals:</h2>
                 <ul class="list-disc ml-10">
@@ -19,15 +19,6 @@
                             Designs of HTML URL Phishing Attacks.&nbsp;IEEE Access.&#8203;</li>
                     <li>
                         Asiri, S., Xiao, Y., & Li, T. (2023). PhishTransformer: A Novel Approach to Detect Phishing Attacks Using URL Collection and Transformer. Electronics, 13(1), 30.
-                    </li>
-
-                </ul>
-                <h2 class='font-bold text-2xl mt-10'>Attendence:</h2>
-                <ul class="list-disc ml-10">
-                    <li>In Dec, 2023 I was awarded to attended Nural Information processsing (NeurIPS), New Orleans, LA, USA.</li>
-                    
-                    <li>
-                        I signed as a committee member in the 2024 ACM Southeast Conference (ACMSE 2024).
                     </li>
 
                 </ul>

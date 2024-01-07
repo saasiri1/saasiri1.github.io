@@ -10,6 +10,7 @@
   "dependencies": {
     "@heroicons/vue": "^2.0.18",
     "@vue-hero-icons/solid": "^1.7.2",
+    "social-logos": "^2.5.8",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
