@@ -1,12 +1,12 @@
 <style scoped>
     .paragraph{
-        @apply text-justify ml-10
+        @apply text-justify ml-10 
     }
     .title{
         @apply text-2xl font-bold text-red-800 my-5
     }
     .subtitle{
-        @apply text-xl ml-3 mb-3
+        @apply text-xl ml-3 my-3 font-bold 
     }
     ul{
         @apply list-disc ml-10 font-semibold mt-3
@@ -19,7 +19,9 @@
 <div class="subtitle">&#8203;Bird Species Detection:&nbsp;</div>
 
 
-<div class="paragraph" style="text-align:justify;">Computer vision tasks have recently grown and become one of the most challenging tasks in deep learning. 
+<div class="paragraph" style="text-align:justify;">
+    
+    Computer vision tasks have recently grown and become one of the most challenging tasks in deep learning. 
     One of these tasks is instance segmentation, which is considered a difficult task in computer vision because of the ability to generate different mask 
     colors on each object in the image. Mask-RCNN Proposed using three networks such as Region Proposed network to locate the object and three CNN networks,
      one for classification, one for extract feature, and another for generating the mask. These networks together make Mask R-CNN robust because it makes the 

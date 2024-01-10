@@ -3,6 +3,7 @@
 import mainNav from '../components/mainNav.vue';
 import Mainfooter from '../components/mainFooter.vue';
 import Social_icons from '../components/social_icons.vue';
+import {ChevronDoubleUpIcon} from "@heroicons/vue/24/outline";
 
 import projects from './projects.vue';
 import publication from './publication.vue';
@@ -10,7 +11,7 @@ import resume from './resume.vue';
 import News from './news.vue';
 
 </script>
-<template >
+<template class="relative">
   <nav>
     <mainNav />
   </nav>
@@ -53,5 +54,9 @@ import News from './news.vue';
 
         </div>
     </div>
+    <!-- <div v-if="showScrollButton" class="fixed bottom-3 right-4 w-10 h-10 rounded-full border border-xl hover:bg-gray-100">
+    <a @click="scrollToTop"><ChevronDoubleUpIcon/></a>
+  </div> -->
+
     <Mainfooter />
 </template>
