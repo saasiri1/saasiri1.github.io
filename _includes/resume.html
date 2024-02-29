@@ -1,0 +1,58 @@
+<div class="m-10 text-justify lg:border-l  lg:px-5" id="resume">
+    <h2 class="text-2xl font-bold text-red-800">Resume:</h2>
+    <h2 class="text-2xl font-bold">
+        Education
+    </h2>
+    <div class="ml-10">
+        <ul class="list-disc">
+            {% for post in site.data.resumes.education %}
+            <li>{{
+                post.education_degree
+            }}</li>
+                <ul class="list-disc ml-10">
+                    <li>
+                        {{
+                            post.education_date
+                        }}
+                    </li>
+                    <li>
+                        {{
+                            post.education_university
+                        }}
+                    </li>
+                </ul>
+            {% endfor %}
+        </ul>
+</div>
+
+    <h2 class="text-2xl font-bold">
+        Experience
+    </h2>
+    <div class="ml-10">
+        <ul class="list-disc">
+            {% for work in site.data.resumes.works %}
+            <li> {{work.work_experience_title}} </li>
+                <ul class="list-disc ml-10">
+                    <li>{{work.work_experience_date}}</li>
+                    <li>{{work.work_experience_location}}</li>
+                </ul>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+    <h2 class="text-2xl font-bold">
+
+        Research Intrests
+    </h2>
+
+    <div class="ml-10">
+        <ul class="list-disc ">
+            {% for research in site.data.resumes.research_interests %}
+            <li>
+                {{research.reseacrh_interst}}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

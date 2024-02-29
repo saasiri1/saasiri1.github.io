@@ -1,0 +1,29 @@
+<div >
+    <div class="lg:fixed lg:left-0 w-full flex flex-col items-center lg:h-screen lg:w-1/3 ">
+  <div id='image' class="">
+    <img src="{{site.data.aboutme.profile_image }}" alt="Sultan Asiri image" class="w-36 lg:w-60 rounded-full">
+  </div>
+  <h1 class="text-3xl font-bold font-serif mt-3 text-red-800">{{page.title}}</h1>
+  <div class="w-80 mt-4 text-justify">
+    <p>{{ site.data.aboutme.short_bio }}</p>
+  </div>
+  
+  <div id="researchInterest">
+    
+    <h2 class="text-2xl font-bold mt-5 ">Research Interst</h2>
+    
+    <ul class="list-disc lg:ml-10">
+      {%- for research_interest in site.data.resumes.research_interests -%}
+
+      <li>{{research_interest.reseacrh_interst}}</li>
+      
+      {%- endfor -%}
+    </ul>
+  </div>
+    <div class="flex flex-row mt-5">
+        <a href={{site.data.aboutme.linkedin_link}} class="hover:text-red-500 mr-4 w-9 mt-0.5"><img src="imgs/linkedin.svg" alt="" srcset=""></a>
+        <a href={{site.data.aboutme.researchgate_link}} class="hover:text-red-500 mr-4 w-9"><img src="imgs/researchgate-square.svg" alt=""></a>
+        <a href={{site.data.aboutme.google_scholar_link }} class="hover:text-red-500 mr-4 w-9"><img src="imgs/google-scholar-square.svg" alt=""></a>
+    </div>
+</div>
+</div>

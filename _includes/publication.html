@@ -1,0 +1,38 @@
+<div class="m-10 text-justify lg:border-l  lg:px-5" id="publication">
+    <div class="wsite-section-elements">
+      <h2 class="text-2xl font-bold text-red-800">Publications</h2>
+
+      
+              <h2 class='font-bold text-2xl'>Conference</h2>
+              <ul class="list-disc ml-10">
+                {% for paper in site.data.publications.conferance_papers %}
+                <li>
+                    {{paper.converence_publication_list}} 
+                    <ul class="list-disc ml-10">
+                      <li>{{paper.converence_publication_author}}</li>
+                      <li>{{paper.converence_publication_date}}</li>
+                      <li>{{paper.converence_publication_location}}</li>
+                      <li>  (<a href={{paper.converence_publication_list_link}} class="text-red-800 font-semibold">READ</a>)  </li>
+                    </ul>
+                  </li>
+                    {% endfor %}
+              </ul> 
+              <h2 class='font-bold text-2xl mt-10'>Journal</h2>
+              <ul class="list-disc ml-10">
+                {% for paper in site.data.publications.journal_papers %}
+                <li>
+                    {{paper.journal_publication_list}} 
+                  </li>
+                  <ul class="list-disc ml-10">
+                    <li>{{paper.journal_publication_author}}</li>
+                    <li>{{paper.journal_publication_date}}</li>
+                    <li>{{paper.journal_publication_publisher}}</li>
+                    <li>
+                    (<a href={{paper.journal_publication_list_link}} class="text-red-800 font-semibold">READ</a>) 
+                    </li>
+                  </ul>
+                  
+                    {% endfor %}
+              </ul> 
+    </div>
+  </div>

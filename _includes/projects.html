@@ -1,0 +1,28 @@
+<div class="m-10 text-justify md:border-l  md:px-5" id="projects">
+    <h2 class="text-2xl font-bold text-red-800 my-5">Projects</h2>
+    
+    {%- for project in site.data.projects.projects -%}
+    <h2 class="text-xl ml-3 my-3 font-bold ">{{
+        project.projects_title1    
+    }}</h2>
+    
+    <div class="m-10 text-justify">{{
+        project.projects_description1    
+    }}
+          <ul class="list-disc ml-10 font-semibold mt-3">
+                <li>Date: {{
+    project.projects_date1    
+                }}</li>
+                <li>{{
+                    project.projects_degree    
+                    }}</li>
+                <li>Advisor: {{
+                project.projects_advisor1        
+                }}</li>
+                <li>{{
+                project.projects_university    
+                }}</li>
+        </ul>
+    </div> 
+    {%- endfor -%}
+</div>

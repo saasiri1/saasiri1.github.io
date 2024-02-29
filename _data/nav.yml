@@ -1,0 +1,11 @@
+- title: news
+  url: "/#news"
+
+- title: Resume
+  url: "/#resume"
+
+- title: Publications
+  url: "/#publication"
+
+- title: Projects
+  url: "/#projects"
