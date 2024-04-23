@@ -15,4 +15,9 @@
   journal_publication_author: Zheyuan Zhang, Jianying Zheng, Yanyun Tao, Yang Xiao, Shumei Yu, Sultan Asiri, Jiacheng Li, Tieshan Li
   journal_publication_publisher: MDPI
   journal_publication_list_link: https://www.mdpi.com/1629400
+- journal_publication_list:  PhishingRTDS A real-time detection system for phishing attacks using a Deep Learning model
+  journal_publication_date: June 2024
+  journal_publication_author: Sultan Asiri, Yang Xiao, Saleh Alzahrani, Tieshan Li
+  journal_publication_publisher: Computer & Security (Elsevier)
+  journal_publication_list_link: https://doi.org/10.1016/j.cose.2024.103843
 
