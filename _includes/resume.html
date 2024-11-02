@@ -5,7 +5,7 @@
     </h2>
     <div class="ml-10">
         <ul class="list-disc">
-            {% for post in site.data.resumes.education %}
+            {% for post in site.data.resumes.education reversed%}
             <li>{{
                 post.education_degree
             }}</li>
@@ -29,8 +29,10 @@
         Experience
     </h2>
     <div class="ml-10">
+        <!-- orgnize in reverse -->
+
         <ul class="list-disc">
-            {% for work in site.data.resumes.works %}
+            {% for work in site.data.resumes.works reversed %}
             <li> {{work.work_experience_title}} </li>
                 <ul class="list-disc ml-10">
                     <li>{{work.work_experience_date}}</li>
