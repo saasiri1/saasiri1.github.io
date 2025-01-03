@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LSG5SGFH1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-7LSG5SGFH1');
-    </script>
+    <!-- Google Analytics, meta tags, etc. -->
     <meta charset="UTF-8">
     <link rel="icon" href="imgs/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style/output.css" rel="stylesheet">
-
     <title>{{page.title}}</title>
   </head>
+
   <body>
-             <!-- Homepage -->
-  
-            {% include nav.html %}
-          <div class="grid grid-row lg:grid-cols-3">
-            {% include bio.html %}
-            
-              <div class="w-full lg:w-full lg:col-span-2 break-words">                
-                
-                {% include news.html %}
-                <!-- Resume -->
-                {% include resume.html %}
-                <!-- Publication -->
-                {% include publication.html %}
-                <!-- Projects -->
-                {% include projects.html %}
-            
+    <!-- Include nav -->
+    {% include nav.html %}
 
-                </div>
-            </div>
-  
+    <div class="grid grid-row lg:grid-cols-3">
+      {% include bio.html %}
+      <div class="w-full lg:w-full lg:col-span-2 break-words">
+        {% include news.html %}
+        {% include resume.html %}
+        {% include publication.html %}
+        {% include projects.html %}
+      </div>
+    </div>
 
+    <!-- Back to Top Button -->
+    <button
+      id="back-to-top"
+      class="hidden fixed bottom-4 right-4 z-50 p-3 bg-cyan-800 rounded-full text-white shadow hover:bg-cyan-600 focus:outline-none"
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      aria-label="Scroll to Top"
+    >
+      <!-- Example Heroicon: Chevron Up -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+
+    <!-- Optional JavaScript to hide/show button on scroll -->
+    <script>
+      // Show the button after scrolling down 300px
+      window.addEventListener('scroll', () => {
+        const backToTopBtn = document.getElementById('back-to-top');
+        if (window.scrollY > 300) {
+          backToTopBtn.classList.remove('hidden');
+        } else {
+          backToTopBtn.classList.add('hidden');
+        }
+      });
+    </script>
   </body>
 </html>
