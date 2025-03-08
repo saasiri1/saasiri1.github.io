@@ -188,6 +188,14 @@ export default function Home() {
                     <h3 className="text-xl font-bold">Member of W4NET lab with Dr. Yang Xiao</h3>
                     <p className="text-muted-foreground">The University of Alabama, USA | 2021 - 2024</p>
                   </div>
+                  <div>
+                    <h3 className="text-xl font-bold"> Member of Geospatial data analysis lab</h3>
+                    <p className="text-muted-foreground">The University of Alabama, USA | 2020-2021</p>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold">Member of The High Performance Data Analytics and Computing (HiPDAC) Lab</h3>
+                    <p className="text-muted-foreground">The University of Alabama, USA |  2019-2020</p>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
