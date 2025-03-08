@@ -47,7 +47,7 @@ export default function Home() {
                 ACM.
               </p>
               <div className="flex space-x-4">
-                <Button variant="default">Contact Me</Button>
+                {/* <Button variant="default">Contact Me</Button> */}
                 {/* <Button variant="outline">Download CV</Button> */}
               </div>
               <div className="flex mt-6 space-x-4">
@@ -230,10 +230,10 @@ export default function Home() {
               <p>Specializing in AI Security, NLP, and Cybersecurity</p>
             </div>
             <div>
-              <h2 className="text-xl font-bold mb-4">Contact</h2>
-              <p className="mb-2">King Khalid University</p>
+              {/* <h2 className="text-xl font-bold mb-4">Contact</h2> */}
+              {/* <p className="mb-2">King Khalid University</p>
               <p className="mb-2">Muhayil Aseer, Saudi Arabia</p>
-              <p>Email: contact@example.com</p>
+              <p>Email: contact@example.com</p> */}
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-700 text-center">
