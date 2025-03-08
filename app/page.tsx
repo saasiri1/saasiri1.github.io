@@ -48,17 +48,17 @@ export default function Home() {
               </p>
               <div className="flex space-x-4">
                 <Button variant="default">Contact Me</Button>
-                <Button variant="outline">Download CV</Button>
+                {/* <Button variant="outline">Download CV</Button> */}
               </div>
               <div className="flex mt-6 space-x-4">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/sultan-asiri-48a1b5ab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Linkedin className="h-6 w-6 text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-primary transition-colors" />
                 </a>
-                <a href="https://researchgate.net" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">
+                <a href="https://www.researchgate.net/profile/Sultan-Asiri-4" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">
                   <BookOpen className="h-6 w-6 text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-primary transition-colors" />
                 </a>
                 <a
-                  href="https://scholar.google.com"
+                  href="https://scholar.google.com/citations?user=lXloWNEAAAAJ&hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Google Scholar"
