@@ -4,13 +4,23 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { personalInfo } from "./data/personalInfo"
+import { researchInterests } from "./data/researchInterests"
+import { news } from "./data/news"
+import { resume } from "./data/resume"
 
 export default function Home() {
+  const iconMap = {
+    Linkedin,
+    BookOpen,
+    Github,
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
       <header className="sticky top-0 z-10 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold">Sultan Asiri</h1>
+          <h1 className="text-xl font-bold">{personalInfo.name}</h1>
           <nav className="hidden md:flex space-x-6">
             <a href="#home" className="font-medium hover:text-primary transition-colors">
               Home
@@ -38,40 +48,29 @@ export default function Home() {
         <section id="home" className="mb-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Dr. Sultan Asiri</h1>
-              <h2 className="text-xl text-muted-foreground mb-6">Assistant Professor at King Khalid University</h2>
-              <p className="text-lg mb-6">
-                Dr. Sultan Asiri is an Assistant Professor at King Khalid University with a Ph.D. in Computer Science
-                from The University of Alabama. His research focuses on applied NLP, AI security, adversarial attacks,
-                and deep learning. Dr. Asiri is also a reviewer for major conferences and journals, including IEEE and
-                ACM.
-              </p>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">{personalInfo.name}</h1>
+              <h2 className="text-xl text-muted-foreground mb-6">{personalInfo.title}</h2>
+              <p className="text-lg mb-6">{personalInfo.bio}</p>
               <div className="flex space-x-4">
                 {/* <Button variant="default">Contact Me</Button> */}
                 {/* <Button variant="outline">Download CV</Button> */}
               </div>
               <div className="flex mt-6 space-x-4">
-                <a href="https://www.linkedin.com/in/sultan-asiri-48a1b5ab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <Linkedin className="h-6 w-6 text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-primary transition-colors" />
-                </a>
-                <a href="https://www.researchgate.net/profile/Sultan-Asiri-4" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">
-                  <BookOpen className="h-6 w-6 text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-primary transition-colors" />
-                </a>
-                <a
-                  href="https://scholar.google.com/citations?user=lXloWNEAAAAJ&hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Google Scholar"
-                >
-                  <Github className="h-6 w-6 text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-primary transition-colors" />
-                </a>
+                {personalInfo.socialLinks.map((link, index) => {
+                  const Icon = iconMap[link.icon as keyof typeof iconMap]
+                  return (
+                    <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.name}>
+                      <Icon className="h-6 w-6 text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-primary transition-colors" />
+                    </a>
+                  )
+                })}
               </div>
             </div>
             <div className="order-1 md:order-2 flex justify-center">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-lg">
                 <Image
                   src="/images/my_image.jpeg"
-                  alt="Dr. Sultan Asiri"
+                  alt={personalInfo.name}
                   fill
                   className="object-cover"
                   priority
@@ -84,13 +83,7 @@ export default function Home() {
         <section id="research" className="mb-20">
           <h2 className="text-3xl font-bold mb-8 text-center">Research Interests</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {[
-              "AI Security",
-              "Adversarial Attacks & Detections",
-              "Social Engineering Attacks & Detections",
-              "Natural Language Processing",
-              "Cybercrime",
-            ].map((interest, index) => (
+            {researchInterests.map((interest, index) => (
               <Card key={index} className="hover:shadow-md transition-shadow">
                 <CardContent className="p-6 text-center">
                   <h3 className="font-medium">{interest}</h3>
@@ -105,35 +98,12 @@ export default function Home() {
           <Card>
             <CardContent className="p-6">
               <ul className="space-y-4">
-                <li className="flex items-start">
-                  <Badge className="mt-1 mr-3">2024</Badge>
-                  <p>
-                    I started new position as the director of programs and academic affairs at Applied College, King
-                    Khalid University, Muhayil Aseer, Saudi Arabia.
-                  </p>
-                </li>
-                <li className="flex items-start">
-                  <Badge className="mt-1 mr-3">2024</Badge>
-                  <p>
-                    I started new position as Assistant Professor at King Khalid University, Muhayil Aseer, Saudi
-                    Arabia.
-                  </p>
-                </li>
-                <li className="flex items-start">
-                  <Badge className="mt-1 mr-3">2024</Badge>
-                  <p>
-                    I received the Computer Science Department's Outstanding Graduate research award for the 2024
-                    academic year.
-                  </p>
-                </li>
-                <li className="flex items-start">
-                  <Badge className="mt-1 mr-3">2024</Badge>
-                  <p>One paper was accepted Computer & Security Elsevier Journal 2024.</p>
-                </li>
-                <li className="flex items-start">
-                  <Badge className="mt-1 mr-3">2024</Badge>
-                  <p>I passed my Ph.D. defense on March,5 2024. I am now a Ph.D. in Computer Science.</p>
-                </li>
+                {news.map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <Badge className="mt-1 mr-3">{item.year}</Badge>
+                    <p>{item.content}</p>
+                  </li>
+                ))}
               </ul>
             </CardContent>
           </Card>
@@ -150,90 +120,36 @@ export default function Home() {
             <TabsContent value="education">
               <Card>
                 <CardContent className="p-6 space-y-6">
-                  <div>
-                    <h3 className="text-xl font-bold">
-                      Philosophy of Computer Science (Ph.D.) in Information Security
-                    </h3>
-                    <p className="text-muted-foreground">The University of Alabama, USA | 2024</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">Master of Computer and Information Science</h3>
-                    <p className="text-muted-foreground">Gannon University, USA | 2019</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">Bachelor of Computer Information Systems</h3>
-                    <p className="text-muted-foreground">King Khalid University, KSA | 2014</p>
-                  </div>
+                  {resume.education.map((edu, index) => (
+                    <div key={index}>
+                      <h3 className="text-xl font-bold">{edu.degree}</h3>
+                      <p className="text-muted-foreground">{edu.institution} | {edu.year}</p>
+                    </div>
+                  ))}
                 </CardContent>
               </Card>
             </TabsContent>
             <TabsContent value="experience">
               <Card>
                 <CardContent className="p-6 space-y-6">
-                  <div>
-                    <h3 className="text-xl font-bold">Director of Programs and Academic Affairs</h3>
-                    <p className="text-muted-foreground">
-                      Applied College, King Khalid University, KSA | 2024 - Present
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">
-                      Assistant Professor in Computer Science (Information Security)
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Applied College, King Khalid University, KSA | 2024 - Present
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">Member of W4NET lab with Dr. Yang Xiao</h3>
-                    <p className="text-muted-foreground">The University of Alabama, USA | 2021 - 2024</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold"> Member of Geospatial data analysis lab</h3>
-                    <p className="text-muted-foreground">The University of Alabama, USA | 2020-2021</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">Member of The High Performance Data Analytics and Computing (HiPDAC) Lab</h3>
-                    <p className="text-muted-foreground">The University of Alabama, USA |  2019-2020</p>
-                  </div>
+                  {resume.experience.map((exp, index) => (
+                    <div key={index}>
+                      <h3 className="text-xl font-bold">{exp.title}</h3>
+                      <p className="text-muted-foreground">{exp.institution} | {exp.period}</p>
+                    </div>
+                  ))}
                 </CardContent>
               </Card>
             </TabsContent>
             <TabsContent value="publications">
               <Card>
                 <CardContent className="p-6 space-y-4">
-                  <div className="flex items-start">
-                    <Badge className="mt-1 mr-3">2024</Badge>
-                    <p>One paper was accepted Computer & Security Elsevier Journal 2024.</p>
-                  </div>
-                  <div className="flex items-start">
-                    <Badge className="mt-1 mr-3">2024</Badge>
-                    <p>One paper was accepted in ACMSE 2024 conference.</p>
-                  </div>
-                  <div className="flex items-start">
-                    <Badge className="mt-1 mr-3">2023</Badge>
-                    <p>One paper was published in MDPI Electronics journal 2023.</p>
-                  </div>
-                  <div className="flex items-start">
-                    <Badge className="mt-1 mr-3">2023</Badge>
-                    <p>One paper was published in ACMSE 2023 conference.</p>
-                  </div>
-                  <div className="flex items-start">
-                    <Badge className="mt-1 mr-3">2023</Badge>
-                    <p>One paper was published in IEEE Access Journal 2023.</p>
-                  </div>
-                  <div className="flex items-start">
-                    <Badge className="mt-1 mr-3">2022</Badge>
-                    <p>One paper was published in MDPI Electronics journal 2022.</p>
-                  </div>
-                  <div className="flex items-start">
-                    <Badge className="mt-1 mr-3">2022</Badge>
-                    <p>One paper was published in ACMSE 2022 conference.</p>
-                  </div>
-                  <div className="flex items-start">
-                    <Badge className="mt-1 mr-3">2021</Badge>
-                    <p>One paper was published in SIGKDD 2021 conference.</p>
-                  </div>
+                  {resume.publications.map((pub, index) => (
+                    <div key={index} className="flex items-start">
+                      <Badge className="mt-1 mr-3">{pub.year}</Badge>
+                      <p>{pub.content}</p>
+                    </div>
+                  ))}
                 </CardContent>
               </Card>
             </TabsContent>
@@ -245,8 +161,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-xl font-bold mb-4">Dr. Sultan Asiri</h2>
-              <p className="mb-4">Assistant Professor at King Khalid University</p>
+              <h2 className="text-xl font-bold mb-4">{personalInfo.name}</h2>
+              <p className="mb-4">{personalInfo.title}</p>
               <p>Specializing in AI Security, NLP, and Cybersecurity</p>
             </div>
             <div>
@@ -257,7 +173,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-700 text-center">
-            <p>&copy; {new Date().getFullYear()} Dr. Sultan Asiri. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p>
           </div>
         </div>
       </footer>
