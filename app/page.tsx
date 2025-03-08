@@ -222,6 +222,18 @@ export default function Home() {
                     <Badge className="mt-1 mr-3">2023</Badge>
                     <p>One paper was published in IEEE Access Journal 2023.</p>
                   </div>
+                  <div className="flex items-start">
+                    <Badge className="mt-1 mr-3">2022</Badge>
+                    <p>One paper was published in MDPI Electronics journal 2022.</p>
+                  </div>
+                  <div className="flex items-start">
+                    <Badge className="mt-1 mr-3">2022</Badge>
+                    <p>One paper was published in ACMSE 2022 conference.</p>
+                  </div>
+                  <div className="flex items-start">
+                    <Badge className="mt-1 mr-3">2021</Badge>
+                    <p>One paper was published in SIGKDD 2021 conference.</p>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
