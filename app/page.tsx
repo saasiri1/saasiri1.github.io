@@ -9,6 +9,7 @@ import { researchInterests } from "./data/researchInterests"
 import { news } from "./data/news"
 import { resume } from "./data/resume"
 
+
 export default function Home() {
   const iconMap = {
     Linkedin,
