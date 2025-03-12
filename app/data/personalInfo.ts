@@ -16,7 +16,12 @@ export const personalInfo = {
     {
       name: "Google Scholar",
       url: "https://scholar.google.com/citations?user=lXloWNEAAAAJ&hl=en",
-      icon: "Github"
+      icon: "BookOpen"
+    },
+    {
+      name: "GitHub",
+      url: "https://github.com/saasiri1",
+      icon: "GitHub"
     }
   ]
 } 
