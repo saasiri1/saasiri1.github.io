@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Github, Linkedin, BookOpen } from "lucide-react"
+import { Github, Linkedin, BookOpen, GlobeLockIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -9,12 +9,12 @@ import { researchInterests } from "./data/researchInterests"
 import { news } from "./data/news"
 import { resume } from "./data/resume"
 
-
 export default function Home() {
   const iconMap = {
     Linkedin,
     BookOpen,
     Github,
+    GlobeLockIcon
   }
 
   return (

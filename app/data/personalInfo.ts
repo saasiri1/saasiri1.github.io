@@ -14,14 +14,14 @@ export const personalInfo = {
       icon: "BookOpen"
     },
     {
-      name: "Google Scholar",
-      url: "https://scholar.google.com/citations?user=lXloWNEAAAAJ&hl=en",
-      icon: "BookOpen"
+      name: "Github",
+      url: "https://github.com/saasiri1",
+      icon: "Github"
     },
     {
-      name: "GitHub",
-      url: "https://github.com/saasiri1",
-      icon: "GitHub"
+      name: "Scholar",
+      url: "https://scholar.google.com/citations?user=lXloWNEAAAAJ&hl=en",
+      icon: "GlobeLockIcon"
     }
   ]
 } 
