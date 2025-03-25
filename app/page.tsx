@@ -135,6 +135,7 @@ export default function Home() {
                 <CardContent className="p-6 space-y-6">
                   {resume.experience.map((exp, index) => (
                     <div key={index}>
+                      
                       <h3 className="text-xl font-bold">{exp.title}</h3>
                       <p className="text-muted-foreground">{exp.institution} | {exp.period}</p>
                     </div>
@@ -147,8 +148,9 @@ export default function Home() {
                 <CardContent className="p-6 space-y-4">
                   {resume.publications.map((pub, index) => (
                     <div key={index} className="flex items-start">
+                      <p className="mt-1 mr-3">{index + 1}.</p>
                       <Badge className="mt-1 mr-3">{pub.year}</Badge>
-                      <p>{pub.content}</p>
+                      <p>{pub.content} <a href={pub.url} target="_blank" rel="noopener noreferrer" className="text-primary">Read more</a></p>
                     </div>
                   ))}
                 </CardContent>

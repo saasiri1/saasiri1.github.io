@@ -1,4 +1,14 @@
+import { Content } from "next/font/google";
+
 export const news = [
+  {
+    year: "2025",
+    content:"One paper was published in MDPI Electronics 2025."
+  },
+  {
+    year: "2025",
+    content: "I started new position as a consultant at the Center of Artifical Intelegence, King Khalid University,Saudi Arabia."
+  },
   {
     year: "2024",
     content: "I started new position as the director of programs and academic affairs at Applied College, King Khalid University, Muhayil Aseer, Saudi Arabia."
