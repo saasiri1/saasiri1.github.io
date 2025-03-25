@@ -160,25 +160,10 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h2 className="text-xl font-bold mb-4">{personalInfo.name}</h2>
-              <p className="mb-4">{personalInfo.title}</p>
-              <p>Specializing in AI Security, NLP, and Cybersecurity</p>
-            </div>
-            <div>
-              {/* <h2 className="text-xl font-bold mb-4">Contact</h2> */}
-              {/* <p className="mb-2">King Khalid University</p>
-              <p className="mb-2">Muhayil Aseer, Saudi Arabia</p>
-              <p>Email: contact@example.com</p> */}
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-slate-700 text-center">
+      <footer className="bg-slate-900 text-white pb-3">
+          <div className="mt-8 pt-3 border-t border-slate-700 text-center">
             <p>&copy; {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p>
           </div>
-        </div>
       </footer>
     </div>
   )
