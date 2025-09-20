@@ -53,6 +53,26 @@ export const resume = {
   publications: [
     {
       year: "2025",
+      content: "One paper was accepted in MDPI Electronics Journal 2025.",
+      url:"https://doi.org/10.3390/electronics14183725"
+    },
+    {
+      year: "2025",
+      content: "One paper was accepted in IEEE Access Journal 2025.",
+      url:"https://doi.org/10.1109/access.2025.3556187"
+    },
+    {
+      year: "2025",
+      content: "One paper was accepted in Scientific Reports Journal 2025.",
+      url:"https://doi.org/10.1038/s41598-025-01588-w"
+    },
+    {
+      year: "2025",
+      content: "One paper was accepted in MPDI Electronics Journal 2025.",
+      url:"https://doi.org/10.3390/electronics14071245"
+    }
+    {
+      year: "2025",
       content: "One paper was published in MDPI Electronics 2025.",
       url: "https://www.mdpi.com/2079-9292/14/7/1245"
     },

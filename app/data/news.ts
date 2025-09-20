@@ -3,6 +3,23 @@ import { Content } from "next/font/google";
 export const news = [
   {
     year: "2025",
+    content: "One paper was accepted in MPDI Electronics Journal 2025."
+  },
+  {
+    year: "2025",
+    content: "One paper was accepted in Scientific Reports Journal 2025."
+
+  },
+  {
+    year: "2025",
+    content: "One paper was accepted in MDPI Electronics Journal 2025."
+  },
+  {
+    year: "2025",
+    content: "One Survey paper was accepted in IEEE Access Journal 2025."
+  },
+  {
+    year: "2025",
     content:"One paper was published in MDPI Electronics 2025."
   },
   {
