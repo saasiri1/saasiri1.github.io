@@ -70,7 +70,7 @@ export const resume = {
       year: "2025",
       content: "One paper was accepted in MPDI Electronics Journal 2025.",
       url:"https://doi.org/10.3390/electronics14071245"
-    }
+    },
     {
       year: "2025",
       content: "One paper was published in MDPI Electronics 2025.",
