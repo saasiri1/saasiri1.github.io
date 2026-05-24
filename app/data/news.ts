@@ -1,57 +1,75 @@
-import { Content } from "next/font/google";
+export type NewsType = "publication" | "position" | "award" | "milestone";
 
-export const news = [
+export type NewsItem = {
+  year: string;
+  content: string;
+  type: NewsType;
+};
+
+export const news: NewsItem[] = [
   {
     year: "2026",
-    content: "One paper was accepted in Computer & Security Elsevier Journal 2026."
+    content: "Started new position as Head of Engineering and Technology Department, King Khalid University, Saudi Arabia.",
+    type: "position",
   },
   {
     year: "2026",
-    content: "One paper was accepted in IEEE Access Journal 2026."
+    content: "One paper was accepted in Computers & Security, Elsevier Journal 2026.",
+    type: "publication",
+  },
+  {
+    year: "2026",
+    content: "One paper was accepted in IEEE Access Journal 2026.",
+    type: "publication",
   },
   {
     year: "2025",
-    content: "One paper was accepted in MPDI Electronics Journal 2025."
+    content: "One paper was accepted in MDPI Electronics Journal 2025.",
+    type: "publication",
   },
   {
     year: "2025",
-    content: "One paper was accepted in Scientific Reports Journal 2025."
-
+    content: "One paper was accepted in Scientific Reports Journal 2025.",
+    type: "publication",
   },
   {
     year: "2025",
-    content: "One paper was accepted in MDPI Electronics Journal 2025."
+    content: "One paper was accepted in MDPI Electronics Journal 2025.",
+    type: "publication",
   },
   {
     year: "2025",
-    content: "One Survey paper was accepted in IEEE Access Journal 2025."
+    content: "One survey paper was accepted in IEEE Access Journal 2025.",
+    type: "publication",
   },
   {
     year: "2025",
-    content:"One paper was published in MDPI Electronics 2025."
-  },
-  {
-    year: "2025",
-    content: "I started new position as a consultant at the Center of Artifical Intelegence, King Khalid University,Saudi Arabia."
+    content: "Started new position as Consultant at the Center of Artificial Intelligence, King Khalid University, Saudi Arabia.",
+    type: "position",
   },
   {
     year: "2024",
-    content: "I started new position as the director of programs and academic affairs at Applied College, King Khalid University, Muhayil Aseer, Saudi Arabia."
+    content: "Started new position as Director of Programs and Academic Affairs at Applied College, King Khalid University, Muhayil Aseer, Saudi Arabia.",
+    type: "position",
   },
   {
     year: "2024",
-    content: "I started new position as Assistant Professor at King Khalid University, Muhayil Aseer, Saudi Arabia."
+    content: "Started new position as Assistant Professor at King Khalid University, Muhayil Aseer, Saudi Arabia.",
+    type: "position",
   },
   {
     year: "2024",
-    content: "I received the Computer Science Department's Outstanding Graduate research award for the 2024 academic year."
+    content: "Received the Computer Science Department's Outstanding Graduate Research Award for the 2024 academic year.",
+    type: "award",
   },
   {
     year: "2024",
-    content: "One paper was accepted Computer & Security Elsevier Journal 2024."
+    content: "One paper was accepted in Computers & Security, Elsevier Journal 2024.",
+    type: "publication",
   },
   {
     year: "2024",
-    content: "I passed my Ph.D. defense on March,5 2024. I am now a Ph.D. in Computer Science."
-  }
-] 
+    content: "Passed Ph.D. defense on March 5, 2024 — Ph.D. in Computer Science, The University of Alabama.",
+    type: "milestone",
+  },
+];

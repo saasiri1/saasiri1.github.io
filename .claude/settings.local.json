@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Recurse -Force)",
+      "Bash(Select-Object FullName)",
+      "PowerShell(head -80)",
+      "PowerShell(cd \"E:\\\\MyPersonalWebsite\\\\saasiri1.github.io\"; Get-ChildItem -Path . -Recurse -Depth 3 -Exclude 'node_modules','.git','jekyllOld','.github','.claude' -Directory | ForEach-Object {$_.FullName.Replace\\(\\(Get-Location\\).Path, \"\"\\)} | Sort-Object)",
+      "Bash(Find lib *)",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)",
+      "Bash(npm run *)",
+      "Bash(Remove-Item -Recurse -Force dist -ErrorAction SilentlyContinue)"
+    ]
+  }
+}

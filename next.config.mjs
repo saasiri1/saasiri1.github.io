@@ -24,6 +24,13 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  webpack: (config) => {
+    config.watchOptions = {
+      ignored: ['**/node_modules/**', '**/.next/**', '**/dist/**'],
+      poll: false,
+    }
+    return config
+  },
 }
 
 mergeConfig(nextConfig, userConfig)
