@@ -1,7 +1,6 @@
 export const researchInterests = [
-  "AI Security",
+  "AI Privacy & Security",
   "Adversarial Attacks & Detections",
-  "Social Engineering Attacks & Detections",
-  "Natural Language Processing",
+  "Fronsic Analysis",
   "Cybercrime",
 ] 

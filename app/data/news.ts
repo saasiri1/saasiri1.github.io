@@ -2,6 +2,14 @@ import { Content } from "next/font/google";
 
 export const news = [
   {
+    year: "2026",
+    content: "One paper was accepted in Computer & Security Elsevier Journal 2026."
+  },
+  {
+    year: "2026",
+    content: "One paper was accepted in IEEE Access Journal 2026."
+  },
+  {
     year: "2025",
     content: "One paper was accepted in MPDI Electronics Journal 2025."
   },

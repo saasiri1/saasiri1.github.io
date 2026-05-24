@@ -20,6 +20,11 @@ export const resume = {
   ],
   experience: [
     {
+      title: "Head of Engineering and Technology Department",
+      institution: "King Khalid University, KSA",
+      period: "2026 - Present"
+    },
+    {
       title: "Consultant in Artificial Intelligence",
       institution: "Center of Artificial Intelligence, King Khalid University, KSA",
       period: "2025 - Present"
@@ -51,6 +56,16 @@ export const resume = {
     }
   ],
   publications: [
+    {
+      year: "2026",
+      content: "One paper was accepted in Computer & Security Elsevier Journal 2026.",
+      url: "https://doi.org/10.1016/j.cose.2026.104909"
+    },
+    {
+      year: "2026",
+      content: "One paper was accepted in IEEE Access Journal 2026.",
+      url: "https://doi.org/10.1109/ACCESS.2026.3673632"
+    },
     {
       year: "2025",
       content: "One paper was accepted in MDPI Electronics Journal 2025.",
