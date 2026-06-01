@@ -9,7 +9,6 @@ export const personalInfo = {
     "Consultant in Artificial Intelligence, Center of AI, King Khalid University",
     "Assistant Professor in Informatics and computer Systems (Information Security)",
   ],
-  // Update with your actual institutional email address
   email: "",
   institution: "King Khalid University, Abha, Saudi Arabia",
   socialLinks: [
