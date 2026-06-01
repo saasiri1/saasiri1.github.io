@@ -7,7 +7,7 @@ export const personalInfo = {
   currentRoles: [
     "Head of Engineering and Technology Department, King Khalid University",
     "Consultant in Artificial Intelligence, Center of AI, King Khalid University",
-    "Assistant Professor in Informatics and computer Systems (Information Security)",
+    "Assistant Professor in Informatics and Computer Systems (Information Security)",
   ],
   email: "",
   institution: "King Khalid University, Abha, Saudi Arabia",
