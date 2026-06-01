@@ -7,11 +7,11 @@ export const personalInfo = {
   currentRoles: [
     "Head of Engineering and Technology Department, King Khalid University",
     "Consultant in Artificial Intelligence, Center of AI, King Khalid University",
-    "Assistant Professor in Computer Science (Information Security)",
+    "Assistant Professor in Informatics and computer Systems (Information Security)",
   ],
   // Update with your actual institutional email address
   email: "",
-  institution: "King Khalid University, Muhayil Aseer, Saudi Arabia",
+  institution: "King Khalid University, Abha, Saudi Arabia",
   socialLinks: [
     {
       name: "LinkedIn",
