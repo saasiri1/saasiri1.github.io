@@ -12,11 +12,11 @@ export const researchInterests = [
   {
     title: "Forensic Analysis",
     description:
-      "Applying AI and NLP techniques to digital forensics for automated evidence discovery and analysis.",
+      "Improving digital forensics tools using AI for automated evidence discovery and analysis.",
   },
   {
     title: "Cybercrime",
     description:
-      "Investigating cybercriminal behavior patterns and building NLP-based detection and attribution systems.",
+      "Investigating cybercriminal behavior patterns and building AI and attribution systems.",
   },
 ];
