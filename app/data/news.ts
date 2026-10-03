@@ -9,6 +9,11 @@ export type NewsItem = {
 export const news: NewsItem[] = [
   {
     year: "2026",
+    content: "Phishing webpage detection using structured URL generation was published in Scientific Reports on July 27, 2026.",
+    type: "publication",
+  },
+  {
+    year: "2026",
     content: "Started new position as Head of Engineering and Technology Department, King Khalid University, Saudi Arabia.",
     type: "position",
   },

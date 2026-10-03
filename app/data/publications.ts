@@ -10,6 +10,13 @@ export type Publication = {
 export const publications: Publication[] = [
   {
     year: "2026",
+    venue: "Scientific Reports (Nature)",
+    content: "Phishing webpage detection using structured URL generation. Sultan Asiri and Naif Alasmari. Published July 27, 2026.",
+    url: "https://doi.org/10.1038/s41598-026-63981-3",
+    type: "journal",
+  },
+  {
+    year: "2026",
     venue: "Computers & Security (Elsevier)",
     content: "Paper accepted in Computers & Security, Elsevier Journal.",
     url: "https://doi.org/10.1016/j.cose.2026.104909",
